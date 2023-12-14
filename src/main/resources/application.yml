@@ -1,0 +1,24 @@
+# By default spring boot auto configuration uses the lines below to connect to the rabbitmq implicitly
+# You can uncomment the lines below in case of the rabbitmq is running with a different configuration
+
+spring:
+  application:
+  rabbitmq:
+    queue:
+      name: javaguides
+      json:
+        name: javaguides_json
+    exchange:
+      name: javaguides_exchange
+    routing:
+      key: javaguides_routing_key
+      json:
+        key: javaguides_json_routing_key
+
+
+
+#     host: localhost
+#     port: 5672
+#     username: guest
+#     password: guest
+
